@@ -37,8 +37,8 @@ def main(args):
     train_df, test_df = train_test_split(df, test_size=0.2, random_state=42)
 
     # Сохранение обучающего и тестового DataFrame в CSV файлы
-    train_df.to_csv('train.csv', index=False)
-    test_df.to_csv('test.csv', index=False)
+    train_df.to_csv('data/proc/train.csv', index=False)
+    test_df.to_csv('data/proc/test.csv', index=False)
 
     return train_df, test_df
 
